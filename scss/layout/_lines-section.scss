@@ -1,0 +1,29 @@
+.lines-section {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tytle {
+    max-width: 600px;
+    flex-basis: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+  }
+  &__image {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__text {
+    padding: 0 20px;
+  }
+}

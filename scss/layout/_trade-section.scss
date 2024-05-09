@@ -1,0 +1,77 @@
+.trade-section {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 28px;
+    margin: 15px;
+    margin-right: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 32px;
+    }
+  }
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 30px;
+      left: -25px;
+      top: 7px;
+      background-color: var(--color-brand-red);
+      margin: 15px;
+    }
+  }
+  &__item--middle {
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 75px;
+    }
+  }
+  &__item--last {
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 150px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    margin: 0 auto;
+  }
+
+  &__image {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__tytle {
+    font-size: 35px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 65px;
+    }
+  }
+}
+
+.about-tytle {
+  font-size: 50px;
+  flex-basis: 100%;
+  text-align: center;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 90px;
+  }
+}

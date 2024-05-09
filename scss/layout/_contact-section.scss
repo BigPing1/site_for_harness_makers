@@ -1,0 +1,40 @@
+.contact-section {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--color-brand-red);
+    padding: 40px;
+  }
+  &__content {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+  &__tytle {
+    flex-basis: 100%;
+    // margin: 0 auto 60px;
+    text-align: center;
+    color: var(--color-bgc);
+  }
+  &__map {
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+    width: 300px;
+    height: 300px;
+    border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 600px;
+      height: 680px;
+    }
+  }
+}

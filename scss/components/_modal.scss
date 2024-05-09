@@ -1,0 +1,46 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: relative;
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-brand-red);
+    clip-path: polygon(
+      0 0,
+      30% 50%,
+      0 100%,
+      50% 70%,
+      100% 100%,
+      70% 50%,
+      100% 0,
+      50% 30%
+    );
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+      background-color: var(--color-brand-dark);
+    }
+  }
+}

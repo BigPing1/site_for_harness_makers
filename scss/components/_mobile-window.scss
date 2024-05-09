@@ -1,0 +1,54 @@
+.mobile-menu {
+  background-color: var(--color-bgc);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(110%);
+  transition: 0.7s;
+
+  &.is-open {
+    transform: translate(0);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    background-color: var(--color-brand-red);
+    clip-path: polygon(
+      0 0,
+      30% 50%,
+      0 100%,
+      50% 70%,
+      100% 100%,
+      70% 50%,
+      100% 0,
+      50% 30%
+    );
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--color-brand-dark);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+}

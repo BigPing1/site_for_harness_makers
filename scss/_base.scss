@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-bgc);
+  font-family: "Oxanium", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
+  font-size: 35px;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 90px;
+  }
+}
+h3 {
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+  // max-width: 300px;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 65px;
+  }
+}
